@@ -1,0 +1,54 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "thayller vilela cintra",
+      "usuario": "root",
+      "senha": "root",
+      "dt_cad": "02-12-2018",
+      "dt_alt": "02-12-2018",
+      "dt_del": ""
+    }
+  ],
+  "clientes": [
+    {
+      "id": 2,
+      "nome": "thayller vilela cintra",
+      "endereco": "antonio jacinto crispim",
+      "numero": 1927,
+      "bairro": "jd cambui",
+      "estado": "SP",
+      "pais": "Brasil",
+      "avaliacao": 3,
+      "dt_cad": "02-12-2018",
+      "dt_alt": "02-12-2018",
+      "dt_del": ""
+    },
+    {
+      "id": 3,
+      "nome": "alemão dos santos",
+      "endereco": "antonio jacinto crispim",
+      "numero": 1923,
+      "bairro": "jd cambui",
+      "estado": "SP",
+      "pais": "Brasil",
+      "avaliacao": 4,
+      "dt_cad": "02-12-2018",
+      "dt_alt": "02-12-2018",
+      "dt_del": ""
+    },
+    {
+      "id": 4,
+      "nome": "Antonia Donizete",
+      "endereco": "antonio jacinto crispim",
+      "numero": 1922,
+      "bairro": "jd cambui",
+      "estado": "SP",
+      "pais": "Brasil",
+      "avaliacao": 5,
+      "dt_cad": "02-12-2018",
+      "dt_alt": "02-12-2018",
+      "dt_del": ""
+    }
+  ]
+}

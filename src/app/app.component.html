@@ -1,0 +1,55 @@
+<app-topo></app-topo>
+
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" [routerLink]="['#']">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a [routerLink]="['/']">
+                  <b>AdminBoard</b>
+                </a>
+                <div id="close-sidebar">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu">
+                        <span>Menu Principal</span>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/clientes']">
+                            <i class="fa fa-user-plus"></i>
+                            <span>Clientes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+            <a href="#">
+            </a>
+            <a href="#">
+            </a>
+            <a href="#">
+            </a>
+            <a href="#">
+                <i class="fa fa-power-off"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <!-- page-content" -->
+</div>
+
+<app-rodape></app-rodape>

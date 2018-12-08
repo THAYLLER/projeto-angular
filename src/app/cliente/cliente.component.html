@@ -1,0 +1,54 @@
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12 col-md-offset-1">
+
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">AdminBoard</h3>
+                  </div>
+                  <div class="col col-xs-6 text-right">
+                      <a href="#" data-toggle="modal" data-target="#formUserCad"><i class="fa fa-file-o" ></i> Novo Registro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-bordered table-list">
+                  <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Ranking</th>
+                        <th scope="col">Data de registro</th>
+                        <th><em class="fa fa-cog" > Ações</em></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let clientes of clientes"   >
+                        <th scope="row">{{ clientes.id}}</th>
+                        <td>{{ clientes.nome}}</td>
+                        <td>{{ clientes.endereco +","+ clientes.numero}}</td>
+                        <td >
+                            <i class="fa {{rt}}" aria-hidden="true" *ngFor="let rt of starRating(clientes.avaliacao)"></i>
+                        </td>
+                        <td>{{ clientes.dt_cad}}</td>
+                        <td align="center">
+                          <a class="btn btn-default"  [routerLink]="['/clientes/editar']"><em class="fa fa-pencil"></em></a>
+                          <a class="btn btn-danger" (click)="delete(clientes)"><em class="fa fa-trash"></em></a>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
+</div></div></div>
+<div class="modal fade" id="formUserCad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+    <app-cliente-cadastro></app-cliente-cadastro>
+</div>
